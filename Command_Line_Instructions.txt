@@ -1,0 +1,18 @@
+The format for command line input is as follows:
+
+-v and -c first if you use them
+
+then integers for packetsPerRow or printPerRow if you want to use something other than default. Any integer is allowed.
+
+then filename 
+----------------------------------------
+All combinations are shown below:
+
+output.exe filename.bmp     		//horizontal mode
+output.exe -v filename.bmp  		//vertical mode
+output.exe -c filename.bmp       	//compact horizontal mode
+output.exe -v -c filename.bmp		//compact vertical mode, position of v and c are interchangeable
+output.exe -c 2 filename.bmp		//compact horizontal mode with 2 packets per row
+output.exe -v -c 2 filename.bmp		//compact vertical mode with 2 packets per row, position of v and c are interchangeable
+output.exe 5 filename.bmp		//horizontal mode with 5 prints per row
+output.exe -v 5 filename.bmp		//vertical mode with 5 prints per row
